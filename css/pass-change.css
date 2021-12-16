@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.img-col {
+  background-image: url("https://source.unsplash.com/user/erondu/1600x900");
+  background-size: cover;
+  height: 100%;
+}
+
+.parent-cont {
+  height: 100vh;
+}
+
+.parent-cont .columns {
+  height: 100%;
+  margin: 0 !important;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.borderless-input {
+  border: transparent;
+}
+
+.borderless-input::placeholder {
+  color: black;
+  font-weight: bold;
+}

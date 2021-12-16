@@ -1,0 +1,69 @@
+.prod-img {
+  border-radius: 5px;
+}
+.column {
+  margin-bottom: 50px;
+}
+.menu-bar li {
+  display: inline-block;
+}
+aside.aside {
+  background: #fff !important;
+}
+section.section.is-title-bar {
+  padding: 1.5rem;
+  border: transparent;
+}
+.navbar-menu {
+  border: transparent;
+}
+.menu-list a:hover {
+  border-radius: 0;
+  background-color: #2e7ca2 !important;
+  color: #fff;
+  display: block;
+  padding: 0.5rem 0;
+}
+.dankemo-blue {
+  border-radius: 4px;
+  background-color: #2e7ca2 !important;
+  color: #fff;
+  border: none;
+}
+.dankemo-red {
+  border-radius: 4px;
+  background-color: #b6142e !important;
+  color: #fff;
+  border: none;
+}
+.button.dankemo-red a {
+  color: #fff;
+}
+.button.dankemo-blue a {
+  color: #fff;
+}
+.button.is-primary {
+  background-color: #e59a46;
+  border: none;
+  color: #fff;
+}
+.is-current {
+  background-color: #2e7ca2 !important;
+  color: #fff;
+}
+.menu-item-label {
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+.menu-label {
+  font-weight: bold;
+}
+.visit-sore-link {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 760px) {
+  html.has-aside-mobile-transition aside.aside .image img {
+    max-width: auto !important;
+  }
+}

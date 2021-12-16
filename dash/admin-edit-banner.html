@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" class="has-aside-left has-aside-mobile-transition has-navbar-fixed-top has-aside-expanded">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile - Admin One HTML - Bulma Admin Dashboard</title>
+
+  <link rel="stylesheet" href="css/dash.css">
+  <link rel="stylesheet" href="css/admin.css">
+
+  <!-- Bulma is included -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- Fonts -->
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="app">
+
+    <nav id="navbar-main" class="navbar is-fixed-top">
+        <div class="navbar-brand">
+          <a class="navbar-item is-hidden-desktop jb-aside-mobile-toggle">
+            <span class="icon"><i class="mdi mdi-forwardburger mdi-24px"></i></span>
+          </a>
+          <div class="navbar-item has-control">
+            <div class="control">
+              <input onkeyup="searchData()" name="search" type="text" id="search" placeholder="Buscar pago" class="input">
+            </div>
+          </div>
+        </div>
+        <div class="navbar-brand is-right">
+          <a class="navbar-item is-hidden-desktop jb-navbar-menu-toggle" data-target="navbar-menu">
+            <span class="icon"><i class="mdi mdi-dots-vertical"></i></span>
+          </a>
+        </div>
+        <div class="navbar-menu fadeIn animated faster" id="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown has-dropdown-with-icons has-divider is-hoverable">
+            <!---
+              <a class="navbar-link is-arrowless">
+                <span class="icon"><i class="mdi mdi-menu"></i></span>
+                <span>Sample Menu</span>
+                <span class="icon">
+                <i class="mdi mdi-chevron-down"></i>
+              </span>
+              </a>
+              <div class="navbar-dropdown">
+                <a href="profile.html" class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-account"></i></span>
+                  <span>My Profile</span>
+                </a>
+                <a class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-settings"></i></span>
+                  <span>Settings</span>
+                </a>
+                <a class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-email"></i></span>
+                  <span>Messages</span>
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-logout"></i></span>
+                  <span>Log Out</span>
+                </a>
+              </div>
+            -->
+            </div>
+          <!---
+            <div class="navbar-item has-dropdown has-dropdown-with-icons has-divider has-user-avatar is-hoverable">
+    
+              <a class="navbar-link is-arrowless">
+                <div class="is-user-avatar">
+                  <img src="https://avatars.dicebear.com/v2/initials/john-doe.svg" alt="John Doe">
+                </div>
+                <div class="is-user-name"><span>Username</span></div>
+                <span class="icon"><i class="mdi mdi-chevron-down"></i></span>
+              </a>
+              <div class="navbar-dropdown">
+                <a href="profile.html" class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-account"></i></span>
+                  <span>My Profile</span>
+                </a>
+                <a class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-settings"></i></span>
+                  <span>Settings</span>
+                </a>
+                <a class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-email"></i></span>
+                  <span>Messages</span>
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  <span class="icon"><i class="mdi mdi-logout"></i></span>
+                  <span>Log Out</span>
+                </a>
+              </div>
+            </div>
+          -->
+            <a href="https://justboil.me/bulma-admin-template/one-html" title="About" class="navbar-item has-divider is-desktop-icon-only">
+              <span class="icon"><i class="mdi mdi-help-circle-outline"></i></span>
+              <span>About</span>
+            </a>
+            <a title="Log out" class="navbar-item is-desktop-icon-only">
+              <span class="icon"><i class="mdi mdi-logout"></i></span>
+              <span>Log out</span>
+            </a>
+          </div>
+        </div>
+    </nav>
+    
+    <aside class="aside is-placed-left is-expanded">
+      <img src="../img/logo.png" alt="">
+      <div class="menu is-menu-main">
+        <p class="menu-label">General</p>
+        <ul class="menu-list">
+          <li>
+            <a href="admin.html" class="has-icon">
+              <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
+              <span class="menu-item-label">Inicio</span>
+            </a>
+          </li>
+        </ul>
+        <p class="menu-label">Menu</p>
+        <ul class="menu-list">
+          <li>
+            <a href="#" class="has-icon has-dropdown-icon">
+              <span class="icon"><i class="mdi mdi-ballot-outline"></i></span>
+              <span class="menu-item-label">Noticias</span>
+              <div class="dropdown-icon">
+                <span class="icon"><i class="mdi mdi-plus"></i></span>
+              </div>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="admin-ver-noticias.html">
+                  <span>&nbsp;&nbsp;<i class="mdi mdi-ballot-outline"></i>&nbsp;Ver noticias</span>
+                </a>
+              </li>
+              <li>
+                <a href="admin-noticias.html">
+                  <span>&nbsp;&nbsp;<i class="mdi mdi-ballot-outline"></i>&nbsp;Publicar noticia</span>
+                </a>
+              </li>
+              <li>
+                <a href="admin-noticias-list.html">
+                  <span>&nbsp;&nbsp;<i class="mdi mdi-ballot-outline"></i>&nbsp;Revisar noticias</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="admin-afiliados.html" class="has-icon">
+              <span class="icon"><i class="mdi mdi-table"></i></span>
+              <span class="menu-item-label">Lista de afiliados</span>
+            </a>
+          </li>
+          <li>
+            <a href="admin-registro.html" class="has-icon">
+              <span class="icon"><i class="mdi mdi-account-circle"></i></span>
+              <span class="menu-item-label">Registro de admin</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="has-icon has-dropdown-icon">
+              <span class="icon"><i class="mdi mdi-cube-outline"></i></span>
+              <span class="menu-item-label">Crear categoría</span>
+              <div class="dropdown-icon">
+                <span class="icon"><i class="mdi mdi-plus"></i></span>
+              </div>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="admin-categorias-producto.html">
+                  <span>&nbsp;&nbsp;<i class="mdi mdi-cube-outline"></i>&nbsp;Categoría de producto</span>
+                </a>
+              </li>
+              <li>
+                <a href="admin-categorias-servicios.html">
+                  <span>&nbsp;&nbsp;<i class="mdi mdi-cube-outline"></i>&nbsp;Categoría de servicio</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="has-icon has-dropdown-icon">
+              <span class="icon"><i class="mdi mdi-credit-card-outline"></i></span>
+              <span class="menu-item-label">Pagos</span>
+              <div class="dropdown-icon">
+                <span class="icon"><i class="mdi mdi-plus"></i></span>
+              </div>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="admin-pagos-exitosos.html">
+                  <span>&nbsp;&nbsp;<i class="mdi mdi-credit-card-outline"></i>&nbsp;Pagos exitosos</span>
+                </a>
+              </li>
+              <li>
+                <a href="admin-pagos-fallidos.html">
+                  <span>&nbsp;&nbsp;<i class="mdi mdi-credit-card-outline"></i>&nbsp;Pagos fallidos</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="has-icon has-dropdown-icon">
+              <span class="icon"><i class="mdi mdi-crop-portrait"></i></span>
+              <span class="menu-item-label">Publicidad</span>
+              <div class="dropdown-icon">
+                <span class="icon"><i class="mdi mdi-plus"></i></span>
+              </div>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="admin-solicitudes-banner.html">
+                  <span>&nbsp;&nbsp;<i class="mdi mdi-crop-portrait"></i>&nbsp;Solicitudes</span>
+                </a>
+              </li>
+              <li>
+                <a href="admin-crear-banner.html">
+                  <span>&nbsp;&nbsp;<i class="mdi mdi-crop-portrait"></i>&nbsp;Crear banner</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="has-icon has-dropdown-icon">
+              <span class="icon"><i class="mdi mdi-crop-portrait"></i></span>
+              <span class="menu-item-label">Opiniones</span>
+              <div class="dropdown-icon">
+                <span class="icon"><i class="mdi mdi-plus"></i></span>
+              </div>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="admin-solicitudes-banner.html">
+                  <span class="menu-item-label">Opiniones sobre afiliados</span>
+                </a>
+              </li>
+              <li>
+                <a href="admin-crear-banner.html">
+                  <span class="menu-item-label">Afiliados a Dankemo</span>
+                </a>
+              </li>
+              <li>
+                <a href="admin-crear-banner.html">
+                  <span class="menu-item-label">Publico a Dankemo</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+  <section class="section is-title-bar">
+    <div class="level">
+      <div class="level-left">
+        <div class="level-item">
+          <ul>
+            <li>Admin</li>
+            <li>Editar banner</li>
+          </ul>
+        </div>
+      </div>
+      <div class="level-right">
+        <div class="level-item">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-hero-bar">
+    <div class="hero-body">
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item"><h1 class="title">
+            Editar banner
+          </h1></div>
+        </div>
+        <div class="level-right" style="display: none;">
+          <div class="level-item"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section is-main-section">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <div class="card tile is-child">
+          <header class="card-header">
+            <p class="card-header-title">
+              <span class="icon"><i class="mdi mdi-account-circle default"></i></span>
+              Edit Profile
+            </p>
+          </header>
+          <div class="card-content">
+            <form>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal"><label class="label">Banner</label></div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="field file">
+                      <label class="upload control">
+                        <a class="button is-primary dankemo-blue">
+                          <span class="icon"><i class="mdi mdi-upload default"></i></span>
+                          <span>Elegir archivo</span>
+                        </a>
+                        <input type="file">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Cliente</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <input type="text" autocomplete="on" name="name" placeholder="Nombre de cliente" class="input" required>
+                    </div>
+                    <p class="help">Required. Your name</p>
+                  </div>
+                </div>
+              </div>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Estatus</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <div class="select">
+                        <select>
+                          <option>Select dropdown</option>
+                          <option>With options</option>
+                        </select>
+                      </div>
+                    </div>
+                    <p class="help">Required. Your e-mail</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal"></div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <button type="submit" class="button is-primary dankemo-blue">
+                        Editar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="card tile is-child">
+          <header class="card-header">
+            <p class="card-header-title">
+              Banner Actual
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="image has-max-width is-aligned-center">
+                <figure class="image is-3by2">
+                    <img src="https://bulma.io/images/placeholders/256x256.png">
+                </figure>
+            </div>
+            <hr>
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control is-clearfix">
+                <input type="text" readonly value="Nombre de cliente" class="input is-static">
+              </div>
+            </div>
+            <hr>
+            <div class="field">
+              <label class="label">E-mail</label>
+              <div class="control is-clearfix">
+                <input type="text" readonly value="cliente@email.com" class="input is-static">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Dankemo
+      </p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Scripts below are for demo only -->
+<script type="text/javascript" src="js/main.min.js"></script>
+
+<!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
+<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
+</body>
+</html>

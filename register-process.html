@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dankemo - Nombre de afiliado</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./multistep/css/app.css">
+    <link rel="stylesheet" href="./multistep/css/app.css.map">
+    <link rel="stylesheet" href="./multistep/css/core.css">
+    <script src="https://use.fontawesome.com/cf546031f8.js"></script>
+    <style>
+        .steps-wrapper .steps .step-item.is-active .step-marker {
+            border-color: #2e7ca2 !important;
+            color: #2e7ca2;
+        }
+
+        .steps .step-item.is-active .step-marker {
+            background-color: #fff;
+            border-color: #2e7ca2;
+            color: #2e7ca2;
+        }
+
+        .button.secondary-btn {
+            outline: none;
+            border-color: #2e7ca2;
+            background-color: #2e7ca2;
+            color: #fff;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+        }
+
+        .button.secondary-btn {
+            outline: none;
+            border-color: #2e7ca2 !important;
+            background-color: #2e7ca2;
+            color: #fff;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+        }
+
+        .steps-wrapper .steps .step-item.is-completed .step-marker {
+            background: #2e7ca2;
+        }
+
+        .steps-wrapper .steps .step-item.is-completed .step-marker {
+            background: #2e7ca2;
+        }
+
+        .steps-wrapper .steps .step-item:before {
+            background: -webkit-gradient(linear, right top, left top, color-stop(50%, #dbdbdb), color-stop(50%, #2e7ca2));
+            background: linear-gradient(to left, #dbdbdb 50%, #2e7ca2 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+        }
+    </style>
+  </head>
+  <body>
+
+    <!-- Bulma steps -->
+    <div class="section">
+        <div class="container">
+
+            <div class="columns mt-20 pb-60 is-vcentered">
+                <div class="column">
+                    <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/128x128.png">
+                    </figure>
+                </div>
+                <div class="column is-7 is-offset-1">
+                    <!-- Wrapper -->
+                    <div class="steps-wrapper is-double-column">
+                        <!-- Steps Indicators -->
+                        <div class="steps" id="stepsDemo3">
+                            <!-- Indicator -->
+                            <div class="step-item is-active">
+                                <div class="step-marker">1</div>
+                                <div class="step-details">
+                                    <p class="step-title">Contrato</p>
+                                </div>
+                            </div>
+                            <!-- Indicator -->
+                            <div class="step-item">
+                                <div class="step-marker">2</div>
+                                <div class="step-details">
+                                    <p class="step-title">Términos</p>
+                                </div>
+                            </div>
+                            <!-- Indicator -->
+                            <div class="step-item">
+                                <div class="step-marker">3</div>
+                                <div class="step-details">
+                                    <p class="step-title">Registro de cuenta</p>
+                                </div>
+                            </div>
+                            <!-- Indicator -->
+                            <div class="step-item">
+                                <div class="step-marker">4</div>
+                                <div class="step-details">
+                                    <p class="step-title">Registro</p>
+                                </div>
+                            </div>
+                            <!-- Steps content wrapper -->
+                            <div class="steps-content">
+                                <!-- Step content -->
+                                <div class="
+                            step-content
+                            has-text-centered
+                            is-active
+                            animated
+                            preFadeInUp
+                            fadeInUp
+                        ">
+                                    <div class="columns">
+                                        <!--Contrato-->
+                                    </div>
+                                </div>
+                                <!-- Step content -->
+                                <div class="
+                            step-content
+                            has-text-centered
+                            animated
+                            preFadeInUp
+                            fadeInUp
+                        ">
+                                    <div class="columns">
+                                        <!--Términos-->
+                                    </div>
+                                </div>
+                                <!-- Step content -->
+                                <div class="
+                            step-content
+                            has-text-centered
+                            animated
+                            preFadeInUp
+                            fadeInUp
+                        ">
+                                    <div class="columns">
+                                        <!-- Column -->
+                                        <div class="column is-6">
+                                            <!-- Field -->
+                                            <div class="field">
+                                                <div class="field-label is-normal">
+                                                    <label class="label">Nombre</label>
+                                                </div>
+                                                <div class="field-body">
+                                                    <div class="field">
+                                                        <div class="control">
+                                                            <input class="input" name="firstname4" id="firstname4" type="text" placeholder="Nombre" autofocus data-validate="require" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Field -->
+                                            <div class="field">
+                                                <div class="field-label is-normal">
+                                                    <label class="label">Apellido</label>
+                                                </div>
+                                                <div class="field-body">
+                                                    <div class="field">
+                                                        <div class="control has-icon has-icon-right">
+                                                            <input class="input" type="text" name="lastname4" id="lastname4" placeholder="Apellido" data-validate="require" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Field -->
+                                            <div class="field">
+                                                <div class="field-label is-normal">
+                                                    <label class="label">Email</label>
+                                                </div>
+                                                <div class="field-body">
+                                                    <div class="field">
+                                                        <div class="control has-icon has-icon-right">
+                                                            <input class="input" type="email" name="email4" id="email4" placeholder="Email" data-validate="require" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Column -->
+                                        <div class="column is-6">
+                                            <!-- Field -->
+                                            <div class="field">
+                                                <div class="field-label is-normal">
+                                                    <label class="label">Nombre de producto/servicio</label>
+                                                </div>
+                                                <div class="field-body">
+                                                    <div class="field">
+                                                        <div class="control">
+                                                            <input class="input" name="position" id="position" type="text" placeholder="Nombre de producto/servicio" autofocus data-validate="require" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Field -->
+                                            <div class="field">
+                                                <div class="field-label is-normal">
+                                                    <label class="label">Lorem</label>
+                                                </div>
+                                                <div class="field-body">
+                                                    <div class="field">
+                                                        <div class="control has-icon has-icon-right">
+                                                            <input class="input" type="text" name="joined" id="joined" placeholder="Lorem" data-validate="require" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Field -->
+                                            <div class="field">
+                                                <div class="field-label is-normal">
+                                                    <label class="label">Lorem</label>
+                                                </div>
+                                                <div class="field-body">
+                                                    <div class="field">
+                                                        <div class="control has-icon has-icon-right">
+                                                            <input class="input" type="number" name="projects" id="projects" placeholder="Lorem" data-validate="require" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Step content -->
+                                <div class="
+                            step-content
+                            has-text-centered
+                            animated
+                            preFadeInUp
+                            fadeInUp
+                        ">
+                                    <!--<img class="confirm-image" src="img/graphics/icons/demo/account.svg" />-->
+                                    <h1 class="title is-5">Tu cuenta ha sido creada</h1>
+                                    <p class="pt-10 pb-10 is-muted">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, cum eum itaque labore omnis amet impedit deserunt illum dolores minus iste vitae consectetur molestiae maiores adipisci illo quae, ut id!
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Steps Navigation -->
+                            <div class="steps-actions">
+                                <div class="steps-action">
+                                    <a href="#" data-nav="previous" class="button is-light button-cta is-bold btn-align">Regreso</a>
+                                    <a href="#" data-nav="next" class="
+                            button
+                            secondary-btn
+                            button-cta
+                            is-bold
+                            raised
+                            btn-align
+                            ">Siguiente</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="wrapper">
+            <div style="height: 250px;" class="columns is-vcentered">
+                <div class="column">
+                    <ul>
+                        <li class="title is-5">lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li class="title is-5">lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li class="title is-5">lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li class="title is-5">lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-offset-10">
+                    <span class="is-uppercase subtitle is-7">Lorem</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+    <script src="./multistep/js/app.js"></script>
+    <script src="./multistep/js/app.js.map"></script>
+    <script src="./multistep/js/core.js"></script>
+    <script src="./multistep/js/core.js.map"></script>
+  </body>
+</html>

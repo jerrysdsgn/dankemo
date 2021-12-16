@@ -1,0 +1,120 @@
+.header-cont {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+hr {
+  margin: 0.7rem 0 !important;
+}
+.affiliate-info li {
+  margin-bottom: 12px;
+}
+
+.logo-img {
+  border-radius: 5px;
+}
+
+.the-header {
+  height: 500px;
+  background-image: url("../img/store-1.jpeg");
+  background-size: cover;
+}
+
+.category-1 {
+  background-image: url("../img/store-1.jpeg");
+  background-size: cover;
+  height: 400px !important;
+  color: white;
+}
+
+.category-2 {
+  background-image: url("../img/store-1.jpeg");
+  background-size: cover;
+  height: 400px !important;
+  color: white;
+}
+
+.category-3 {
+  background-image: url("../img/store-1.jpeg");
+  background-size: cover;
+  height: 400px !important;
+  color: white;
+}
+
+.overflow {
+  height: 100%;
+  background: black;
+  opacity: 0.6;
+  border-radius: 4px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.prod-container .column {
+  margin-top: 60px;
+}
+
+.video-container {
+  border-radius: 10px;
+}
+
+.intro-desc {
+  padding: 50px;
+}
+
+footer {
+  background: #eeeeea;
+  height: 250px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.prod-img {
+  border-radius: 5px;
+}
+
+.prod-desc {
+  font-size: 0.95em;
+}
+
+.button {
+  padding: 6px 12px;
+  font-size: 0.95em;
+  border-radius: 4px;
+}
+
+.midheight {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.table td,
+.table th {
+  border: 1px solid transparent;
+}
+
+.notification {
+  padding: 0;
+}
+
+.thenav {
+  height: 80px;
+}
+
+.navbar-item img {
+  max-height: none;
+}
+
+.nav-logo {
+  height: auto;
+  width: 200px;
+}
+
+.dankemo-blue {
+  border-radius: 4px;
+  background-color: #2e7ca2 !important;
+  color: #fff;
+  border: none;
+}

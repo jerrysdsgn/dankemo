@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.img-col {
+  /*background-image: url('https://source.unsplash.com/user/erondu/1600x900');*/
+  background-image: url("../img/team-1.png");
+  background-size: cover;
+  height: 100%;
+}
+
+.parent-cont {
+  height: 100vh;
+}
+
+.parent-cont .columns {
+  height: 100%;
+  margin: 0 !important;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
