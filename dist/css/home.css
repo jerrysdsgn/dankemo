@@ -1,0 +1,130 @@
+button a {
+  color: white;
+}
+.header-cont {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+hr {
+  margin: 0.7rem 0 !important;
+}
+.affiliate-info li {
+  margin-bottom: 12px;
+}
+
+.logo-img {
+  border-radius: 5px;
+}
+
+.the-header {
+  height: 700px;
+  background-image: url("../img/2.png");
+  background-size: cover;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.prod-container .column {
+  margin-top: 60px;
+}
+
+.video-container {
+  border-radius: 10px;
+}
+
+.intro-desc {
+  padding: 50px;
+}
+
+.prod-img {
+  border-radius: 5px;
+}
+
+.prod-desc {
+  font-size: 0.95em;
+}
+
+.button {
+  padding: 6px 12px;
+  font-size: 0.95em;
+  border-radius: 4px;
+}
+
+.midheight {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.extraheight {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.table td,
+.table th {
+  border: 1px solid transparent;
+}
+
+.thenav {
+  height: 80px;
+}
+
+.navbar-item img {
+  max-height: none;
+}
+
+.nav-logo {
+  height: auto;
+  width: 200px;
+}
+
+/*Header 2*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.img-col {
+  background-image: url("../img/horizontal.png");
+  background-size: cover;
+  height: 100%;
+}
+
+.img-container {
+  background-image: url("../img/horizontal.png");
+  background-size: cover;
+  height: 450px;
+}
+
+.parent-cont {
+  height: 100vh;
+}
+
+.parent-cont .columns {
+  height: 100%;
+  margin: 0 !important;
+}
+
+.dankemo-blue {
+  border-radius: 4px;
+  background-color: #2e7ca2 !important;
+  color: #fff;
+  border: none;
+}
+
+.dankemo-red {
+  border-radius: 4px;
+  background-color: #b6142e !important;
+  color: #fff;
+  border: none;
+}
+
+@media screen and (max-width: 740px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,56 @@
+.sticky {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.4s;
+  padding: 20px 50px;
+  background: white !important;
+}
+
+.spacer {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 769px) {
+  .sticky {
+    /*width: 90%;*/
+    display: block;
+    width: 100vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .thenav {
+    height: auto !important;
+  }
+  .navbar-burger {
+    margin-top: 25px !important;
+  }
+  .intro-desc {
+    padding: 0px !important;
+  }
+  button {
+    margin-bottom: 30px !important;
+  }
+  .parent-cont {
+    height: auto !important;
+  }
+  .box {
+    padding: 25px !important;
+    box-shadow: none;
+  }
+  .wrapper {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .hero-body {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 3rem 0.8rem;
+  }
+}
