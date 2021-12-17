@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Afiliado - Noticias</title>
+  <title>Afiliado - Editar producto</title>
 
   <link rel="stylesheet" href="../css/dash.css">
   <link rel="stylesheet" href="../css/admin.css">
@@ -15,6 +15,16 @@
   <!-- Fonts -->
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+  <style>
+    .b-table .table td.is-image-cell .image {
+        margin: 0 auto;
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    .table td{
+        vertical-align: middle !important;
+    }
+  </style>
 </head>
 <body>
 <div id="app">
@@ -24,13 +34,9 @@
           <a class="navbar-item is-hidden-desktop jb-aside-mobile-toggle">
             <span class="icon"><i class="mdi mdi-forwardburger mdi-24px"></i></span>
           </a>
-        <!---
           <div class="navbar-item has-control">
-            <div class="control">
-              <input onkeyup="searchData()" name="search" type="text" id="search" placeholder="Buscar pago" class="input">
-            </div>
+
           </div>
-        -->
         </div>
         <div class="navbar-brand is-right">
           <a class="navbar-item is-hidden-desktop jb-navbar-menu-toggle" data-target="navbar-menu">
@@ -222,174 +228,178 @@
       </div>
     </aside>
 
-    <section class="hero is-hero-bar">
-      <div class="hero-body">
+    <section class="section is-title-bar">
         <div class="level">
           <div class="level-left">
-            <div class="level-item"><h1 class="title">
-              Mis Noticias
-            </h1></div>
+            <div class="level-item">
+              <ul>
+                <li>Afiliado</li>
+                <li>Editar producto</li>
+              </ul>
+            </div>
           </div>
           <div class="level-right">
             <div class="level-item">
-          <!---
               <div class="buttons is-right">
-                <a href="https://admin-one-html.justboil.me/" target="_blank" class="button dankemo-blue is-primary">
-                  <span class="icon"><i class="mdi mdi-plus"></i></span>
-                  <span>Agregar categoría</span>
-                </a>
+
               </div>
-          -->
             </div>
           </div>
         </div>
-      </div>
     </section>
-  
+
+    <section class="hero is-hero-bar">
+        <div class="hero-body">
+          <div class="level">
+            <div class="level-left">
+              <div class="level-item"><h1 class="title">
+                Editar producto
+              </h1></div>
+            </div>
+            <div class="level-right" style="display: none;">
+              <div class="level-item"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <!--Image Zone-->
+
     <section class="section is-main-section">
-  
-      <!--CATEGORY-->
-      <div class="box">
-          <article class="media">
-            <div class="media-left">
-              <figure class="image is-128x128">
-                <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-              </figure>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <div class="card tile is-child">
+                    <header class="card-header">
+                    <p class="card-header-title">
+                        <span class="icon"><i class="mdi mdi-account-circle default"></i></span>
+                        Editar producto
+                    </p>
+                    </header>
+                    <div class="card-content">
+
+
+                    <form>
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label">Nombre de producto</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                <div class="control">
+                                    <input type="text" autocomplete="on" name="name" placeholder="Título de sección de imágen" class="input" required>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                          <div class="field-label is-normal"><label class="label">Imágen de producto</label></div>
+                          <div class="field-body">
+                              <div class="field">
+                              <div class="field file">
+                                  <label class="upload control">
+                                  <a class="button is-primary dankemo-blue">
+                                      <span class="icon"><i class="mdi mdi-upload default"></i></span>
+                                      <span>Elegir archivo</span>
+                                  </a>
+                                  <input type="file">
+                                  </label>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                        <br />
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label">Botón</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                <div class="control">
+                                    <input type="text" name="cta" placeholder="Link de botón" class="input" required>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label">Descripción</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                <div class="control">
+                                    <textarea class="textarea" name="" placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quos exercitationem enim ipsa dolore veritatis, magnam optio rerum vitae sit ratione, veniam quia sunt dolor similique, voluptate officiis quasi explicabo." id="" cols="30" rows="10"></textarea>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal"></div>
+                            <div class="field-body">
+                                <div class="field">
+                                <div class="control">
+                                    <button type="submit" class="button is-primary dankemo-blue">
+                                    Editar seccion de imágen
+                                    </button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+
+                    </div>
+                </div>
             </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <strong>Noticia #</strong>
-                  <br>
-                  Página en sitio
-                  <br />
-                  <a href="#.html">Visitar afiliado</a>
-                </p>
-              </div>
+            <div class="tile is-parent">
+                <div class="card tile is-child">
+                    <header class="card-header">
+                    <p class="card-header-title">
+                        <span class="icon"><i class="mdi mdi-account default"></i></span>
+                        Producto actual
+                    </p>
+                    </header>
+                    <div class="card-content">
+                    <div class="image is-2by1">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="John Doe">
+                    </div>
+                    <hr>
+                    <h3 class="title is-4">Título de sección de imágen</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quos exercitationem enim ipsa dolore veritatis, magnam optio rerum vitae sit ratione, veniam quia sunt dolor similique, voluptate officiis quasi explicabo.</p>
+                    <br />
+                    <div class="buttons">
+                        <a href="#">
+                            <button class="button is-black">Botón</button>
+                        </a>
+                    </div>
+                    </div>
+                </div>
             </div>
-          </article>
         </div>
-  
-      <!--CATEGORY-->
-      <div class="box">
-          <article class="media">
-            <div class="media-left">
-              <figure class="image is-128x128">
-                <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <strong>Noticia #</strong>
-                  <br>
-                  Página en sitio
-                  <br />
-                  <a href="#.html">Visitar afiliado</a>
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-  
-      <!--CATEGORY-->
-      <div class="box">
-          <article class="media">
-              <div class="media-left">
-              <figure class="image is-128x128">
-                  <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-              </figure>
-              </div>
-              <div class="media-content">
-              <div class="content">
-                  <p>
-                  <strong>Noticia #</strong>
-                  <br>
-                  Página en sitio
-                  <br />
-                  <a href="#.html">Visitar afiliado</a>
-                  </p>
-              </div>
-              </div>
-          </article>
-      </div>
-  
-      <!--CATEGORY-->
-      <div class="box">
-          <article class="media">
-            <div class="media-left">
-              <figure class="image is-128x128">
-                <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <strong>Noticia #</strong>
-                  <br>
-                  Página en sitio
-                  <br />
-                  <a href="#.html">Visitar afiliado</a>
-                </p>
-              </div>
-            </div>
-          </article>
-      </div>
-  
-      <!--CATEGORY-->
-      <div class="box">
-          <article class="media">
-            <div class="media-left">
-              <figure class="image is-128x128">
-                <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <strong>Noticia #</strong>
-                  <br>
-                  Página en sitio
-                  <br />
-                  <a href="#.html">Visitar afiliado</a>
-                </p>
-              </div>
-            </div>
-          </article>
-      </div>
-  
     </section>
 
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        Dankemo
-      </p>
-    </div>
-  </footer>
+    <!--End of Image Zone-->
 
-  <div id="sample-modal" class="modal">
-    <div class="modal-background jb-modal-close"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Confirm action</p>
-        <button class="delete jb-modal-close" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <p>This will permanently delete <b>Some Object</b></p>
-        <p>This is sample modal</p>
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button jb-modal-close">Cancel</button>
-        <button class="button is-danger jb-modal-close">Delete</button>
+
+    </section>
+
+      
+    
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            Dankemo
+          </p>
+        </div>
       </footer>
+    
     </div>
-    <button class="modal-close is-large jb-modal-close" aria-label="close"></button>
-  </div>
-</div>
-
 <!-- Scripts below are for demo only -->
 <script type="text/javascript" src="../js/main.min.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
 <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">

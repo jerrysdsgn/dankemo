@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Profile - Admin One HTML - Bulma Admin Dashboard</title>
+  <title>Admin - Banner</title>
 
   <link rel="stylesheet" href="css/dash.css">
   <link rel="stylesheet" href="css/admin.css">
@@ -25,9 +25,7 @@
             <span class="icon"><i class="mdi mdi-forwardburger mdi-24px"></i></span>
           </a>
           <div class="navbar-item has-control">
-            <div class="control">
-              <input onkeyup="searchData()" name="search" type="text" id="search" placeholder="Buscar pago" class="input">
-            </div>
+
           </div>
         </div>
         <div class="navbar-brand is-right">
@@ -235,17 +233,17 @@
             </a>
             <ul class="submenu">
               <li>
-                <a href="admin-solicitudes-banner.html">
+                <a href="admin-opiniones.html">
                   <span class="menu-item-label">Opiniones sobre afiliados</span>
                 </a>
               </li>
               <li>
-                <a href="admin-crear-banner.html">
+                <a href="admin-opiniones.html">
                   <span class="menu-item-label">Afiliados a Dankemo</span>
                 </a>
               </li>
               <li>
-                <a href="admin-crear-banner.html">
+                <a href="admin-opiniones.html">
                   <span class="menu-item-label">Publico a Dankemo</span>
                 </a>
               </li>
@@ -261,18 +259,8 @@
         <div class="level-item">
           <ul>
             <li>Admin</li>
-            <li>Profile</li>
+            <li>Banner</li>
           </ul>
-        </div>
-      </div>
-      <div class="level-right">
-        <div class="level-item">
-          <div class="buttons is-right">
-            <a href="https://admin-one-html.justboil.me/" target="_blank" class="button is-primary">
-              <span class="icon"><i class="mdi mdi-credit-card-outline"></i></span>
-              <span>Premium Demo</span>
-            </a>
-          </div>
         </div>
       </div>
     </div>
@@ -282,7 +270,7 @@
       <div class="level">
         <div class="level-left">
           <div class="level-item"><h1 class="title">
-            Profile
+            Banner
           </h1></div>
         </div>
         <div class="level-right" style="display: none;">
@@ -298,13 +286,13 @@
           <header class="card-header">
             <p class="card-header-title">
               <span class="icon"><i class="mdi mdi-account-circle default"></i></span>
-              Edit Profile
+              Crear banner
             </p>
           </header>
           <div class="card-content">
             <form>
               <div class="field is-horizontal">
-                <div class="field-label is-normal"><label class="label">Banner</label></div>
+                <div class="field-label is-normal"><label class="label">Imagen de Banner</label></div>
                 <div class="field-body">
                   <div class="field">
                     <div class="field file">
@@ -329,20 +317,18 @@
                     <div class="control">
                       <input type="text" autocomplete="on" name="name" placeholder="Nombre de cliente" class="input" required>
                     </div>
-                    <p class="help">Required. Your name</p>
                   </div>
                 </div>
               </div>
               <div class="field is-horizontal">
                 <div class="field-label is-normal">
-                  <label class="label">E-mail</label>
+                  <label class="label">Link</label>
                 </div>
                 <div class="field-body">
                   <div class="field">
                     <div class="control">
-                      <input type="email" autocomplete="on" name="email" placeholder="user@example.com" class="input" required>
+                      <input type="text" autocomplete="on" name="email" placeholder="Link de banner" class="input" required>
                     </div>
-                    <p class="help">Required. Your e-mail</p>
                   </div>
                 </div>
               </div>
@@ -353,7 +339,7 @@
                   <div class="field">
                     <div class="control">
                       <button type="submit" class="button is-primary dankemo-blue">
-                        Submit
+                        Crear
                       </button>
                     </div>
                   </div>
